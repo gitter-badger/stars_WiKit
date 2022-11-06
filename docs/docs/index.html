@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>星辰吖的（MineCraft） 插件文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="rice-doc: 星辰吖插件文档，我的世界(Minecraft)FlyLimit飞行限制" />
+  <meta name="keywords" content="rice-doc,Minecraft,我的世界,米饭文档,Stars_DeathProtece,FlyLimit,星辰守护插件,飞行限制插件,插件" />
+  <meta name="baidu-site-verification" content="code-pqWI12oIXz" />
+  <meta name="author" content="handy，1499294151@qq.com" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">加载时间过久请刷新页面...</div>
+
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: ''
+    }
+  </script>
+<script>
+  window.$docsify = {
+      loadSidebar: true,
+      loadNavbar: true,
+      name: '米饭 文档',
+      repo: 'https://ricedoc.handyplus.cn',
+      coverpage: true,
+      //自动跳转到页面顶部
+      auto2top: true,
+      //小屏设备下合并导航栏到侧边栏
+      mergeNavbar: true,
+      count:{
+          countable:true,
+          fontsize:'0.9em',
+          color:'rgb(90,90,90)',
+          language:'chinese'
+      },
+      plugins: [
+          // footer
+          function (hook) {
+              var ad = [
+                  '<div style="padding: 0em 1em 1em 1em; background-color: #E8ECF1;">' +
+                  '特别宣传 by：<a target="_blank" href="https://www.mcbbs.net/thread-1297813-1-1.html">' +
+                  ' <img src="https://z3.ax1x.com/2021/09/08/hH1Dmt.png" style="width:100%"></a></div>',
+                  '<br/>'
+              ].join('');
+
+              var footer = [
+                  '<hr/>',
+                  '<footer>',
+                  '<span><a href="https://beian.miit.gov.cn" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">晋ICP备19010136号</a><br/>&copy; 2022 rice doc. All Rights Reserved.</span>',
+                  '<span><a href="https://docsify.js.org" target="_blank">Powered by docsify</a></span>',
+                  '</footer>'
+              ].join('');
+
+              hook.afterEach(function (html) {
+                  return ad + html + footer;
+              });
+          }
+      ]
+  }
+</script>
+<!-- gitter -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+      room: 'stars/chat'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<!-- emoji -->
+<script src="https://cdn.staticfile.org/docsify/4.12.2/plugins/emoji.min.js"></script>
+
+<script src="https://cdn.staticfile.org/docsify/4.12.2/docsify.min.js"></script>
+</body>
+</html>
